@@ -1,36 +1,24 @@
 import React from "react";
+// import styles from "../App.css";
 
 const Clock = ({ timeLeft }) => {
   console.log(timeLeft);
   return (
-    <text>{timeLeft.hours + ":" + timeLeft.minutes}</text>
-
-    // <View style={styles.clock}>
-    //   <Text style={styles.text}>
-    //     {(props.timeLeft.hours == 0 ? "" : props.timeLeft.hours + ":") +
-    //       (props.timeLeft.minutes < 10
-    //         ? "0" + props.timeLeft.minutes
-    //         : props.timeLeft.minutes) +
-    //       ":" +
-    //       (props.timeLeft.seconds < 10
-    //         ? "0" + props.timeLeft.seconds
-    //         : props.timeLeft.seconds)}
-    //   </Text>
-    // </View>
+    <div style={style}>
+      {(timeLeft.hours === 0 ? "" : timeLeft.hours + ":") +
+        (timeLeft.minutes < 10 ? "0" + timeLeft.minutes : timeLeft.minutes) +
+        ":" +
+        (timeLeft.seconds < 10 ? "0" + timeLeft.seconds : timeLeft.seconds)}
+    </div>
   );
 };
 
-// const styles = StyleSheet.create({
-//   clock: {
-//     height: 60,
-//     padding: 15,
-//     backgroundColor: "darkslateblue",
-//   },
-//   text: {
-//     color: "#fff",
-//     fontSize: 23,
-//     textAlign: "center",
-//   },
-// });
+const style = {
+  color: "#fff",
+  backgroundColor: "darkslateblue",
+  fontSize: 23,
+  height: 23,
+  padding: 15,
+};
 
 export default Clock;
