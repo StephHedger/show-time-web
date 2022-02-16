@@ -36,7 +36,10 @@ const App = () => {
   });
 
   return (
-    <div className="App" style={{ padding: 100 }}>
+    <div
+      className="App"
+      style={{ paddingTop: 250, paddingRight: 30, paddingLeft: 30 }}
+    >
       <Clock timeLeft={timeLeft} />
     </div>
   );
