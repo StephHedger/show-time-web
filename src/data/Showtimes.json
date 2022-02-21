@@ -1,5 +1,5 @@
 [
-  { "id": 1, "day": "1", "hours": 18, "min": 30, "order": 40.5 },
+  { "id": 1, "day": "1", "hours": 18, "min": 30, "order": 42.5 },
   { "id": 0, "day": "0", "hours": 18, "min": 30, "order": 66.5 },
   { "id": 3, "day": "3", "hours": 13, "min": 0, "order": 85 },
   { "id": 4, "day": "3", "hours": 19, "min": 30, "order": 91.5 },
